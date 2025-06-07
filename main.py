@@ -12,9 +12,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 import smtplib
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 MAIL_ADDRESS = os.environ.get("EMAIL_KEY")
 MAIL_APP_PW = os.environ.get("PASSWORD_KEY")
